@@ -1,0 +1,223 @@
+.page {
+  min-height: 100vh;
+  background: #0b1220;
+  color: #e8eefc;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+.header {
+  padding: 20px 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  margin: 6px 0 0 0;
+  color: #a9b6da;
+}
+
+.grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 24px 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 14px 0 10px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.18);
+  color: #e8eefc;
+  outline: none;
+}
+
+input:focus {
+  border-color: rgba(99, 163, 255, 0.8);
+}
+
+.primary {
+  margin-top: 2px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 0;
+  color: #081021;
+  font-weight: 700;
+  background: linear-gradient(90deg, #56ccf2, #2f80ed);
+  cursor: pointer;
+}
+
+.primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error {
+  margin: 10px 0 0 0;
+  color: #ffb4b4;
+}
+
+.result {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.18);
+}
+
+.kv {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.kv > div {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.k {
+  display: block;
+  color: #a9b6da;
+  font-size: 12px;
+}
+
+.v {
+  display: block;
+  font-weight: 800;
+  margin-top: 3px;
+}
+
+.monospace {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  word-break: break-all;
+}
+
+.muted {
+  color: #a9b6da;
+  margin: 10px 0 0 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem {
+  text-align: left;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  color: #e8eefc;
+}
+
+.listItem.active {
+  border-color: rgba(99, 163, 255, 0.9);
+  background: rgba(99, 163, 255, 0.12);
+}
+
+.liTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.liAudit {
+  font-size: 12px;
+}
+
+.liBottom {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.liMeta {
+  color: #a9b6da;
+  font-size: 12px;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 14px 0;
+}
+
+.markers {
+  margin-top: 12px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.markersTitle {
+  color: #a9b6da;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.markers ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.markers li {
+  margin: 6px 0;
+}
